@@ -1,0 +1,450 @@
+/*____INICIO_Gerais____*/
+
+@font-face {
+	font-family: 'tech';
+	src: url(../fontes/ARCADECLASSIC.ttf);
+}
+
+@font-face {
+	font-family: 'subtext';
+	src: url(../fontes/chivo.ttf);
+}
+
+body {
+	background:linear-gradient(to right top, 
+	black 40%, #F3F280);
+	overflow-x: none;
+	background-attachment: fixed;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #FCFBD9 ;
+
+}
+
+body::-webkit-scrollbar {
+    width: 10px ;
+        box-shadow: 0 0 40px black;
+}
+body::-webkit-scrollbar-thumb {
+    background: #FFFC89 ;
+        border-radius: 20px ;
+
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #FFFA46 ;
+        border-radius: 20px ;
+}
+
+ul, li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+section {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.row {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+/*____FIM_Gerais____*/
+
+
+
+/*____INICIO_Classes____*/
+
+/*____INICIO_FIRST_PAGE____*/
+
+.nav-link{
+	color: white;
+	font-weight: bold;
+	letter-spacing: 5px;
+} 
+
+.nav-item, .nav-link:hover {
+	color: #F3F280;
+}
+
+.navbar {
+	background: rgba(0, 0, 0, 0.8);
+	padding-bottom: 41px!important;
+}
+
+.img {
+	margin: 0 auto !important;
+	display: flex;
+	padding: 0;
+	animation: movimento 3s infinite normal;
+}
+
+/*____INICIO_CONFIG_ESCRITA_NOME____*/
+
+.linha {
+ 	 animation: linha 1s steps(40) infinite normal , 
+ 	 typing 4s steps(40) 1s  normal both;
+ }
+
+ .linha2 {
+ 	 animation: linha 1s steps(40) infinite normal , 
+ 	 typing2 4s steps(40) 1s normal both;	
+ }
+
+ .nome {
+	color: white;
+    font-size: 6vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    font-family: 'tech';
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.descricao {
+	color: white;
+    font-size: 4vw;
+    display: flex;
+    text-align: center;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*____FIM_CONFIG_ESCRITA_NOME____*/ 
+
+/*____FIM_FIRST_PAGE____*/
+
+
+/*____INICIO_SOBRE____*/
+
+.text {
+	font-size: 12vw;
+	color: white;
+	text-align: center;
+    font-family: 'tech';
+}
+
+.subtext {
+	font-size: 4vw;
+	padding: 30px;
+    color: white;
+    text-align: center;
+    font-family: 'subtext';
+}
+
+.icons_sobre {
+	color: white;
+	font-size: 11vw;
+}
+
+.rotation1 {
+	animation: rotation1Variation 4s infinite normal;
+}
+
+.rotation2 {
+	animation: rotation2Variation 4s infinite normal;
+}
+
+.rotation3 {
+	animation: rotation3Variation 4s infinite normal;
+}
+
+
+/*____FIM_SOBRE____*/
+
+
+/*____INICIO_HABILIDADES____*/
+
+.icons {
+     text-align: center !important;
+     font-size: 30vw;
+}
+
+.icons:hover {
+	cursor: pointer;
+}
+
+.container {
+	height: 100vh;
+}
+
+.align {
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+
+/*____FIM_HABILIDADES____*/
+
+
+
+/*____INICIO_PROJETOS____*/
+
+.projetos {
+  height: 25vh;
+}
+
+.projetos:hover {
+	filter: invert(1);
+}
+
+.projetosEmDesenvolvimento {
+  height: 25vh;
+  filter: blur(3px);
+}
+
+.projetosEmDesenvolvimento:hover {
+	filter: blur(0);
+	filter: invert(1);
+}
+
+.projetos2 {
+	height: 25vh;
+}
+
+
+.projetos2:hover {
+	filter: invert(1)!important;
+}
+
+.projetos2Img {
+    filter: invert(1)!important;
+}
+
+.subtext2 {
+	font-size: 3.5vw;
+	padding: 30px;
+    color: white;
+    text-align: center;
+    font-family: 'subtext';
+}
+
+/*____FIM_PROJETOS____*/
+
+/*____FIM_Classes____*/ 
+
+
+
+ /*____INICIO_ID____*/
+
+ #inicio {
+ 	height: 100vh;
+ }
+
+ #sobre, #projetos {
+ 	background: rgba(0, 0, 0, 1.0);
+ 	padding-bottom: 40px !important;
+ }
+
+ .display {
+ 	display: none;
+ }
+
+ /*____FIM_ID____*/
+
+
+
+/*____INICIO_Keyframes____*/
+
+@keyframes rotation1Variation {
+   0%   {}
+   50%  {transform: translateX(200%);
+    text-shadow: 0px 0px 20px #F3F280;}
+   100% {}
+}
+
+@keyframes rotation2Variation {
+   0%   {}
+   50%  {
+    text-shadow: 0px 0px 20px #F3F280;}
+   100% {}
+}
+
+@keyframes rotation3Variation {
+   0%   {}
+   50%  {transform: translateX(-200%);
+     text-shadow: 0px 0px 40px #F3F280;}
+   100% {}
+}
+
+@keyframes rotation1 {
+   0%   {}
+   50%  {transform: translateY(100%) translateX(240%);
+    text-shadow: 0px 0px 20px #F3F280;}
+   100% {}
+}
+
+@keyframes rotation2 {
+   0%   {}
+   50%  {transform: translateY(-50%);
+    text-shadow: 0px 0px 20px #F3F280;}
+   100% {}
+}
+
+@keyframes rotation3 {
+   0%   {}
+   50%  {transform: translateY(100%) translateX(-240%);
+     text-shadow: 0px 0px 40px #F3F280;}
+   100% {}
+}
+
+@keyframes movimento {
+  0%   {}
+  50%  {transform: translateY(10%); filter: blur(2px);}
+  100% {}
+}
+    
+@keyframes linha {
+   from{
+     border-right: none;
+   }
+   to {
+     border-right:2px solid rgba(255,255,255, 0.7) ; 
+   } 
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 10em;
+	}
+   }
+
+@keyframes typing2 {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 14em;
+	}
+   }
+ 
+/*____FIM_Keyframes____*/
+
+
+
+/*____INICIO_MediaQueries____*/     
+
+@media (min-width: 576px) {
+ .navbar {
+ 	padding-bottom: 23px!important;
+ }
+
+ .text {
+ 	font-size: 8vw;
+ }
+
+ .subtext {
+     font-size: 3vw;
+  }
+
+  @keyframes typing2 {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 13em;
+	}
+   }
+
+ }
+
+@media (min-width: 768px) {
+      .nome {
+  	font-size: 4vw;
+  }
+  
+   .descricao {
+     font-size: 3vw;
+  }
+
+  .text {
+  	font-size: 6vw;
+  }
+
+  .icons {
+  	font-size: 12vw;
+  }
+
+  .subtext2{
+  	font-size:2.3vw;
+  }
+  .subtext {
+  	font-size: 2.2vw;
+  }
+
+  .rotation1 {
+	animation: rotation1 4s infinite normal;
+}
+
+.rotation2 {
+	animation: rotation2 4s infinite normal;
+}
+
+.rotation3 {
+	animation: rotation3 4s infinite normal;
+}
+
+ }
+
+@media (min-width: 992px) { 
+
+
+.img {
+	width: 500px;
+}
+
+.subtext {
+     font-size: 1.8vw;
+  }
+
+    .subtext2{
+  	font-size:1.8vw;
+  }
+
+ }
+
+@media (min-width: 1200px) { 
+
+ 
+        .user {
+	height: 100vh;
+	order:1;
+}
+
+.user-info {
+	height: 100vh;
+	order:0;
+}
+
+    .nome {
+  	font-size: 3.5vw;
+  }
+
+  .descricao {
+     font-size: 2vw;
+  }
+
+  .subtext {
+     font-size: 1.85vw;
+  }
+
+   .margin {
+ 	margin-top: -60px !important;
+ }
+ }
+
+ /*____FIM_MediaQueries____*/
