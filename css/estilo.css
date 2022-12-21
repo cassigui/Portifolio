@@ -81,6 +81,7 @@ section {
 .img {
 	margin: 0 auto !important;
 	display: flex;
+	width: 250px;
 	padding: 0;
 	animation: movimento 3s infinite normal;
 }
@@ -192,6 +193,10 @@ section {
   height: 25vh;
 }
 
+.fix {
+	margin-top: 140px !important;
+}
+
 .projetos:hover {
 	filter: invert(1);
 }
@@ -239,8 +244,13 @@ section {
  	height: 100vh;
  }
 
+ #projetos {
+ 	height: 120vh !important;
+ }
+
  #sobre, #projetos {
  	background: rgba(0, 0, 0, 1.0);
+ 	background-size: 100%;
  	padding-bottom: 40px !important;
  }
 
@@ -350,6 +360,10 @@ section {
      font-size: 3vw;
   }
 
+   #projetos {
+ 	height: 100vh !important;
+ }
+
   @keyframes typing2 {
 	from {
 		width: 0;
@@ -427,7 +441,13 @@ section {
 
 .user-info {
 	height: 100vh;
+	margin-top: -100px;
 	order:0;
+}
+
+.teste {
+		margin-top: -100px;
+
 }
 
     .nome {
