@@ -1,210 +1,205 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<title>Portfólio | Cassiano Guilherme</title>
 
-	<script defer src = "JavaScript/java.js"></script>
-    
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+		crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" type="text/css" href="FW/css/all.css">
 
-	<link rel="stylesheet" type="text/css" href="estilo.css">
 
 	<link rel="stylesheet" type="text/css" href="fontawesome1/css/all.css">
 
 </head>
+
 <body>
 
-	<header >
-		<nav class="menu navbar navbar-expand-sm fixed-top ">
-           
+	<section>
 
-			<button class="mt-4 btn btn-outline-light align-items-center d-flex d-sm-none" onclick = "show()">
-				<i class=" fa-solid fa-bars"></i>
-			</button>
-                 
-			<div class="display d-sm-flex mr-auto ml-auto mb-3" id='navegacao'>
-           
-			<ul class=" navbar-nav ml-sm-auto mt-3 mr-5 ">
-				<li class="nav-item">
-						<a class = "nav-link" href="#inicio">Inicio</a></li>
-                <li class="mr-3 ml-sm-3 nav-item">
-                    	<a href="#sobre" class = "nav-link">Sobre</a>
-                    </li>
-                <li class=" mr-3 nav-item">
-                    	<a href="#habilidades" class = "nav-link">Habilidades</a>
-                    </li>
-                <li class="nav-item">
-                    	<a href="#projetos" class = "nav-link">Projetos</a></li>
-			</ul>
-		  </div>	
+		<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+
+			<div class="container">
+
+				<button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+					data-bs-target="#ConteudoNavegacao" aria-controls="ConteudoNavegacao" aria-expanded="false"
+					aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+
+				<div class="collapse navbar-collapse p-lg-0" id="ConteudoNavegacao">
+					<ul class="navbar-nav nav d-flex gap-2 p-4 ms-auto me-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#inicio">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#sobre">Sobre</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#habilidades">Habilidades</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projetos">Projetos</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 
+	</section>
 
-	</header>
+	<section id="inicio" class="d-flex justify-content-center align-items-center pt-5 pb-5">
 
-	<section id="inicio" class="d-flex">	
-     
-    <div class="col-12 col-md-10 m-auto">
+		<div class="col-12 col-md-10 m-auto row pt-5 pb-5">
 
-    <div class="col-12 col-xl-6 d-flex align-items-center user float-right p-0">
-		<div class="mt-5 mt-sm-0 d-flex ml-auto mr-auto p-0">
-		   <img class=' img mb-5' src="imagens/avatar.png">
+			<div class="user-info d-flex align-items-center justify-content-center col-12 col-xl-6 me-auto text-center">
+				<div>
+					<p class="nome linha">Cassiano &nbsp Guilherme</p>
+					<p class="descricao linha2 ">Desenvolvedor front-end</p>
+				</div>
+			</div>
+
+			<div class="col-12 col-xl-6 d-flex align-items-center p-0">
+				<div class="d-flex me-auto me-lg-0 ms-auto p-0">
+					<img class=' img mb-5' src="imagens/avatar.png">
+				</div>
+			</div>
+
 		</div>
-	 </div> 	
-
-    <div class="user-info  mt-sm-5 d-flex align-items-center justify-content-center col-12 col-xl-6 float-left"> 
-	<div >
-	<p class="ml-auto ml-xl-0 mr-auto mr-xl-0 nome linha">Cassiano &nbsp Guilherme</p>
-	<p class=" ml-auto ml-xl-0 mr-xl-0 descricao linha2 ">Desenvolvedor front-end</p>
-    </div>
-    </div>
-
-
-	 </div>  
-	</section> 
-
-
-	<section id = 'sobre'>
-       
-         <div class="row ">
-         	<div class=" col-12 col-md-6">
-
-         <h1 class="text text-left ml-4 mt-5">Sobre mim.</h1> 	   
-         	   <p class="subtext text-left mt-2"><b>
-         Meu nome é Cassiano Guilherme, desde pequeno fui cativado pela tecnologia e atualmente me esforço constantemente para a entrada no mercado de trabalho na área de programação front-end. Meus conhecimentos são básicos, porém aplicáveis e úteis em diversas ocasiões. Dentre eles, podemos citar:<br>
-         -Html (básico).<br>
-         -Css (básico).<br>
-         -JavaScript(básico).<br>
-         Também tenho a disposição de conhecimentos gerais, principalmente na área de display responsivo, compatibilidade de dispositivos e utilização de frameworks.</b>
-      	 </p> 
-      	 </div>
-
-      	 <div class=" col-12 col-md-6 d-flex" >
-      	 	<div class=" d-flex align-items-center ml-auto mr-auto">
-      	 	 <i class="icons_sobre rotation1 fa-solid fa-book"></i>
-      	 	 <i class="mr-5 ml-5 icons_sobre rotation2 fa-solid fa-cube"></i>
-      	 	 <i class="icons_sobre rotation3 fa-solid fa-atom"></i>
-      	 	</div>
-      	 </div>   
-
-         </div>
 	</section>
 
-	<section id = 'habilidades'>
-        
-    <div class="container col-11 col-sm-12 col-lg-8" >
 
-        	<div class="">
-       	   	  <h1 class="text-center text align-content-center align">Habilidades</h1>
-       	     </div>
-           
-           <div class="row margin d-flex align-items-center">
-            
-       	   	 <div class="btn btn-outline-light col-6 col-lg-4 border">
-       	   	   <i class=" icons col-12 fa-brands fa-github"></i>
-       	   	 </div>  
+	<section id='sobre' class="bg-black pt-5 pb-5">
 
-       	   	 <div class="btn btn-outline-light col-6 col-lg-4 border">
-       	   	 	<i class="icons col-12 fa-brands fa-bootstrap"></i>
-       	   	 </div>
+		<div class="container pt-5 pb-5">
+			<div class="row">
+				<div class=" col-12 col-md-6">
+					<h1 class="text">Sobre mim.</h1>
+					<p class="subtext mt-2"><b>
+							Meu nome é Cassiano Guilherme, desde pequeno fui cativado pela tecnologia e atualmente me
+							esforço constantemente para a entrada no mercado de trabalho na área de programação
+							front-end.
+							Meus conhecimentos são básicos, porém aplicáveis e úteis em diversas ocasiões. Dentre eles,
+							podemos citar:<br>
+							-Html (Intermediário).<br>
+							-Css (Intermediário).<br>
+							-JavaScript(Intermediário).<br>
+							-Dart(Iniciante).<br>
+							-Flutter(Iniciante).<br>
+							-NodeJs(Iniciante).<br>
+							Também tenho a disposição de conhecimentos gerais, principalmente na área de display
+							responsivo,
+							compatibilidade de dispositivos e utilização de frameworks.</b>
+					</p>
+				</div>
 
-       	   	 <div class="btn btn-outline-light col-6 col-lg-4 border">
-       	   	 	<i class="icons col-12 fa-brands fa-html5"></i>
-
-       	   	 </div>
-         	
-         	 <div class="btn btn-outline-light col-6 col-lg-4 border">
-         	 	<i class="text-center icons col-12 fa-brands fa-css3-alt"></i>
-         	 </div>
-
-         	 <div class="btn btn-outline-light col-6 col-lg-4 border">
-         		<i class=" icons col-12  fa-brands fa-js"></i>
-         	 </div>
-
-         	 <div class="btn btn-outline-light col-6 col-lg-4 border">
-         	 	<i class="icons col-12 fa-brands fa-font-awesome"></i>
-          	 </div>
-
-       	   </div>
-       </div>
-
-      
+				<div class=" col-12 col-md-6 d-flex">
+					<div class=" d-flex align-items-center ms-auto me-auto">
+						<i class="icons_sobre rotation1 fa-solid fa-book"></i>
+						<i class="me-5 ms-5 icons_sobre rotation2 fa-solid fa-cube"></i>
+						<i class="icons_sobre rotation3 fa-solid fa-atom"></i>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
-	<section id = 'projetos' class="fix">
-          
-          <div class="container" >
+	<section id='habilidades' class="pt-5 pb-5">
+		<div class="container pt-5 pb-5">
+			<div class="row gap-3 d-flex justify-content-center">
 
-          	<div class="mt-5">
-          		<h1 class="text">Projetos</h1>
-          		<p class="subtext2">(Apenas protótipos não ativos.)</p>
-          	</div>
-           
-           <div class="row ml-auto mr-auto col-11 d-flex align-items-center">
-            
-       	   	 <div class="borda btn btn-outline-light col-6 col-lg-4 border p-0 m-0">
-       	   	 	<div class="border align-items-center justify-content-center d-flex col-12 projetos">
-       	   	 <a href="https://finansprot.netlify.app/"><img class="col-12" src="imagens/logo.png"></a>
-       	   	    </div>  
-       	   	 </div>
+				<div class= "col-12">
+					<p class="text text-center">Habilidades</p>
+				</div>
 
-       	   	 <div class=" btn btn-outline-light col-6 col-lg-4 border p-0 m-0">
-       	   	 	<div class="align-items-center justify-content-center d-flex col-12 projetos2">
-       	   	 <a href="https://museunacionalprot.netlify.app"><img class = "projetos2Img col-12" src="imagens/museu.png"></a>
-       	   	    </div>  
-       	   	 </div>
+				<div class="btn btn-outline-light pt-5 pb-5 col-5 col-lg-3 border">
+					<i class="display-1 fa-brands fa-github"></i>
+				</div>
 
-       	   	 <div class=" btn btn-outline-light col-6 col-lg-4 border p-0 m-0">
-       	   	 	<div class="align-items-center justify-content-center d-flex col-12 projetos2">
-       	   	 <a href="https://skatrix.netlify.app"><img class = "projetos2Img col-12" src="imagens/skatrix.png"></a>
-       	   	    </div>  
-       	   	 </div>
+				<div class="btn btn-outline-light pt-5 pb-5 col-5 col-lg-3 border">
+					<i class="display-1 fa-brands fa-bootstrap"></i>
+				</div>
 
-       	   	 <div class=" btn btn-outline-light col-6 col-lg-4 border p-0 m-0">
-       	   	 	<div class="align-items-center justify-content-center d-flex col-12 projetos">
-       	   	 <a href="https://registrosprototype.netlify.app/"><img class = "col-12" src="imagens/pig.png"></a>
-       	   	    </div>  
-       	   	 </div>
+				<div class="btn btn-outline-light pt-5 pb-5 col-5 col-lg-3 border">
+					<i class="display-1 fa-brands fa-html5"></i>
+				</div>
 
-       	   	 <div class=" btn btn-outline-light col-6 col-lg-4 border p-0 m-0">
-       	   	 	<div class="align-items-center justify-content-center d-flex col-12 projetosEmDesenvolvimento">
-       	   	 <a href=""><img class = " col-12" src="imagens/breve.png"></a>
-       	   	    </div>  
-       	   	 </div>
+				<div class="btn btn-outline-light pt-5 pb-5 col-5 col-lg-3 border">
+					<i class="display-1 fa-brands fa-css3-alt"></i>
+				</div>
 
-       	   	 <div class=" btn btn-outline-light col-6 col-lg-4 border p-0 m-0">
-       	   	 	<div class="align-items-center justify-content-center d-flex col-12 projetosEmDesenvolvimento">
-       	   	 <a href=""><img class = " col-12" src="imagens/breve.png"></a>
-       	   	    </div>  
-       	   	 </div>
-         	
-         	
+				<div class="btn btn-outline-light pt-5 pb-5 col-5 col-lg-3 border">
+					<i class="display-1 fa-brands fa-js"></i>
+				</div>
 
-       	   </div>
-       </div>
-        
+				<div class="btn btn-outline-light pt-5 pb-5 col-5 col-lg-3 border">
+					<i class="display-1 fa-brands fa-font-awesome"></i>
+				</div>
+
+			</div>
+		</div>
+		</div>
+
+
 	</section>
 
-	<script type="text/javascript">
-		
-      function show () {
-         if (navegacao.style.display == 'flex'){
-         	navegacao.style.display = 'none'
-         } else {
-         	navegacao.style.display = 'flex'
+	<section id='projetos' class="d-flex justify-content-center align-content-center bg-black pt-5 pb-5">
 
-         }     
-      	}
-        
-	</script>
-   
+		<div class="container pt-5 pb-5">
+
+			<div class="mt-5">
+				<h1 class="text text-center">Projetos</h1>
+				<p class="subtext2">(Apenas protótipos não ativos.)</p>
+			</div>
+
+			<div class="row d-flex align-items-center align-content-center gap-3 justify-content-center">
+
+				<div class="box-img col-5 col-xl-3 border pt-5 pb-5 btn btn-outline-light">
+					<a><img src="imagens/finans.png" class="imgProjeto col-12"></a>
+				</div>
+
+				<div class="box-img col-5 col-xl-3 border pt-5 pb-5 btn btn-outline-light">
+					<a href="https://museunacionalprot.netlify.app"><img class="imgProjeto col-12"
+							src="imagens/museu.png"></a>
+				</div>
+
+				<div class="box-img col-5 col-xl-3 border pt-5 pb-5 btn btn-outline-light">
+					<a href="https://skatrix.netlify.app"><img class="imgProjeto col-12" src="imagens/skatrix.png"></a>
+				</div>
+
+				<div class="box-img col-5 col-xl-3 border pt-5 pb-5 btn btn-outline-light">
+					<a href="https://registrosprototype.netlify.app/"><img class="imgProjeto col-12"
+							src="imagens/pig.png"></a>
+				</div>
+
+				<div class="box-img col-5 col-xl-3 border pt-5 pb-5 btn btn-outline-light">
+					<a href=""><img src="imagens/em_breve.png" class="imgProjeto col-12"></a>
+				</div>
+
+				<div class="box-img col-5 col-xl-3 border pt-5 pb-5 btn btn-outline-light">
+					<a href=""><img src="imagens/em_breve.png" class="imgProjeto col-12"></a>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<script src="JavaScript/script.js"></script>
 
 </body>
+
 </html>

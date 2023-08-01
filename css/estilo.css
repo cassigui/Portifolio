@@ -2,21 +2,25 @@
 
 @font-face {
 	font-family: 'tech';
-	src: url(../fontes/ARCADECLASSIC.ttf);
+	src: url("../fontes/ARCADECLASSIC.ttf");
 }
 
 @font-face {
 	font-family: 'subtext';
-	src: url(../fontes/chivo.ttf);
+	src: url("../fontes/chivo.ttf");
 }
 
 body {
 	background:linear-gradient(to right top, 
-	black 40%, #F3F280);
+	black 40%, #eceb8a);
 	overflow-x: none;
 	background-attachment: fixed;
 	padding: 0 !important;
 	margin: 0 !important;
+}
+
+.borda {
+  border: 2px solid red!important;
 }
 
 body::-webkit-scrollbar-track {
@@ -63,39 +67,23 @@ section {
 
 /*____INICIO_FIRST_PAGE____*/
 
-.nav-link{
+.nav-item a{
 	color: white;
 	font-weight: bold;
 	letter-spacing: 5px;
-} 
+}
 
-.nav-item, .nav-link:hover {
+.active {
+  color: #eceb8a!important;
+  border-bottom: 2px solid #eceb8a!important;
+}
+
+.nav-item a:hover {
 	color: #F3F280;
 }
 
 .navbar {
 	background: rgba(0, 0, 0, 0.8);
-}
-
-div.scrollmenu {
-  overflow: auto;
-  white-space: nowrap;
-  display: flex;
-  margin: 0 auto;
-  padding: 0;
-}
-
-div.scrollmenu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-    letter-spacing: 1px;
-}
-
-div.scrollmenu a:hover {
-    color:#F3F280 ;
 }
 
 .img {
@@ -150,14 +138,12 @@ div.scrollmenu a:hover {
 .text {
 	font-size: 12vw;
 	color: white;
-	text-align: center;
     font-family: 'tech';
 }
 
 .subtext {
 	padding: 30px;
     color: white;
-    text-align: center;
     font-family: 'subtext';
 }
 
@@ -186,7 +172,6 @@ div.scrollmenu a:hover {
 
 .icons {
      text-align: center !important;
-     font-size: 30vw;
 }
 
 .icons:hover {
@@ -194,9 +179,6 @@ div.scrollmenu a:hover {
 	filter: blur(5px);
 }
 
-.container {
-	height: 100vh;
-}
 
 .align {
   padding: 80px 0 20px 0 !important;
@@ -208,40 +190,17 @@ div.scrollmenu a:hover {
 
 /*____INICIO_PROJETOS____*/
 
-.projetos {
-  height: 25vh;
+.imgProjeto {
+  position: relative;
 }
 
-.fix {
-	margin-top: 140px !important;
-    padding-top: 60px !important;
+.box-img {
+  overflow: hidden;
+  display: flex;
 }
 
-.projetos:hover {
-	filter: invert(1);
-}
-
-.projetosEmDesenvolvimento {
-  height: 25vh;
-  filter: blur(3px);
-}
-
-.projetosEmDesenvolvimento:hover {
-	filter: blur(0);
-	filter: invert(1);
-}
-
-.projetos2 {
-	height: 25vh;
-}
-
-
-.projetos2:hover {
-	filter: invert(1)!important;
-}
-
-.projetos2Img {
-    filter: invert(1)!important;
+.box-img:hover a{
+  filter: invert(1);
 }
 
 .subtext2 {
@@ -260,20 +219,6 @@ div.scrollmenu a:hover {
 
  /*____INICIO_ID____*/
 
- #inicio {
- 	height: 100vh;
- }
-
- #projetos {
- 	height: 120vh !important;
- }
-
- #sobre, #projetos {
- 	background: rgba(0, 0, 0, 1.0);
- 	background-size: 100%;
-    height: 100vh;
- 	padding-bottom: 40px !important;
- }
 
  /*____FIM_ID____*/
 
@@ -408,10 +353,6 @@ div.scrollmenu a:hover {
         font-size: 8vw;
     }
 
-   #projetos {
-    height: 130vh !important;
-   }
-
    .align {
     padding: 60px 0 20px 0;
 }
@@ -431,20 +372,6 @@ div.scrollmenu a:hover {
     }
 }
 
-@media (min-height:800px) {
-    .subtext {
-        font-size: 4.8vw;
-    }
-
-    .text {
-        font-size: 12vw;
-    }
-
-      .icons_sobre {
-        font-size: 10vw;
-    }
-}  
-
 @media (min-width: 576px) {
 
  .text {
@@ -454,10 +381,6 @@ div.scrollmenu a:hover {
  .subtext {
      font-size: 3vw;
   }
-
-   #projetos {
- 	height: 100vh !important;
- }
 
   @keyframes typing2 {
 	from {
@@ -491,10 +414,6 @@ div.scrollmenu a:hover {
   	font-size: 6vw;
   }
 
-  .icons {
-  	font-size: 12vw;
-  }
-
   .subtext2{
   	font-size:2.3vw;
   }
@@ -516,11 +435,22 @@ div.scrollmenu a:hover {
 
  }
 
-@media (min-width: 992px) { 
 
- .align {
-  padding: 80px 0 80px 0 !important;
-}
+ @media (min-height:800px) {
+  .subtext {
+      font-size: 4.2vw;
+  }
+
+  .text {
+      font-size: 10vw;
+  }
+
+    .icons_sobre {
+      font-size: 10vw;
+  }
+}  
+
+@media (min-width: 992px) { 
 
 .img {
 	width: 500px;
@@ -538,23 +468,10 @@ div.scrollmenu a:hover {
 
 @media (min-width: 1200px) { 
 
- 
-        .user {
-	height: 100vh;
-	order:1;
-}
-
-.user-info {
-	height: 100vh;
-	margin-top: -100px;
-	order:0;
-}
-
 .teste {
 		margin-top: -100px;
 
 }
-
     .nome {
   	font-size: 3.5vw;
   }
