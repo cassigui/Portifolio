@@ -1,15 +1,5 @@
 /*____INICIO_Gerais____*/
 
-@font-face {
-	font-family: 'tech';
-	src: url("../fontes/ARCADECLASSIC.ttf");
-}
-
-@font-face {
-	font-family: 'subtext';
-	src: url("../fontes/chivo.ttf");
-}
-
 body {
 	background:linear-gradient(to right top, 
 	black 40%, #eceb8a);
@@ -17,31 +7,16 @@ body {
 	background-attachment: fixed;
 	padding: 0 !important;
 	margin: 0 !important;
+   font-family: monospace!important;
 }
 
 .borda {
   border: 2px solid red!important;
 }
 
-body::-webkit-scrollbar-track {
-    background-color: #FCFBD9 ;
-
-}
-
-body::-webkit-scrollbar {
-    width: 10px ;
-        box-shadow: 0 0 40px black;
-}
-body::-webkit-scrollbar-thumb {
-    background: #FFFC89 ;
-        border-radius: 20px ;
-
-}
-
-body::-webkit-scrollbar-thumb:hover {
-    background: #FFFA46 ;
-        border-radius: 20px ;
-}
+.btn {
+   cursor: default!important;
+} 
 
 ul, li {
 	list-style-type: none;
@@ -66,6 +41,10 @@ section {
 /*____INICIO_Classes____*/
 
 /*____INICIO_FIRST_PAGE____*/
+
+#inicio, #sobre, #habilidades{
+   height: 100vh;
+}
 
 .nav-item a{
 	color: white;
@@ -113,7 +92,6 @@ section {
     padding: 0;
     display: flex;
     text-align: center;
-    font-family: 'tech';
     white-space: nowrap;
     overflow: hidden;
 }
@@ -123,7 +101,6 @@ section {
     font-size: 4vw;
     display: flex;
     text-align: center;
-    font-family: monospace;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -137,12 +114,11 @@ section {
 
 .text {
 	color: white;
-    font-family: 'tech';
 }
 
 .subtext {
     color: white;
-    font-family: 'subtext';
+    font-weight: 100;
 }
 
 .icons_sobre {
@@ -173,7 +149,6 @@ section {
 }
 
 .icons:hover {
-	cursor: pointer;
 	filter: blur(5px);
 }
 
@@ -206,7 +181,6 @@ section {
 	padding: 30px;
     color: white;
     text-align: center;
-    font-family: 'subtext';
 }
 
 /*____FIM_PROJETOS____*/

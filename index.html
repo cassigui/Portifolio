@@ -26,9 +26,23 @@
 
 	<link rel="stylesheet" type="text/css" href="fontawesome1/css/all.css">
 
+	<style id="scrollbar-style">
+		.scroll::-webkit-scrollbar {
+			width: 12px;
+			border: 1px solid rgb(200, 200, 200);
+		}
+
+		.scroll::-webkit-scrollbar-thumb {
+			background-color: gold;
+			border-radius: 6px;
+			/* Adicionando a transição suave para a cor de fundo */
+			transition: background-color 2s ease;
+		}
+	</style>
+
 </head>
 
-<body>
+<body class="scroll">
 
 	<section>
 
@@ -36,7 +50,7 @@
 
 			<div class="container">
 
-				<button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+				<button class="navbar-toggler text-white mt-3 mb-3" type="button" data-bs-toggle="collapse"
 					data-bs-target="#ConteudoNavegacao" aria-controls="ConteudoNavegacao" aria-expanded="false"
 					aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
 
@@ -63,16 +77,16 @@
 
 	<section id="inicio" class="d-flex justify-content-center align-items-center pt-5 pb-5">
 
-		<div class="col-12 col-md-10 m-auto row pt-5 pb-5">
+		<div class="col-12 col-md-10 m-auto row pt-5 pb-5 gap-5 gap-lg-0">
 
-			<div class="user-info d-flex align-items-center justify-content-center col-12 col-xl-6 me-auto text-center">
+			<div class="d-flex align-items-center justify-content-center col-12 col-lg-6 me-auto text-center">
 				<div>
-					<p class="nome linha">Cassiano &nbsp Guilherme</p>
+					<p class="nome linha">Cassiano Guilherme</p>
 					<p class="descricao linha2 ">Desenvolvedor front-end</p>
 				</div>
 			</div>
 
-			<div class="col-12 col-xl-6 d-flex align-items-center p-0">
+			<div class="col-12 col-lg-6 d-flex align-items-center p-0">
 				<div class="d-flex me-auto me-lg-0 ms-auto p-0">
 					<img class=' img mb-5' src="imagens/avatar.png">
 				</div>
@@ -82,9 +96,9 @@
 	</section>
 
 
-	<section id='sobre' class="bg-black pt-5 pb-5">
+	<section id='sobre' class="bg-black pt-5 pb-5 d-flex">
 
-		<div class="container">
+		<div class="container d-flex align-items-center">
 			<div class="row pt-5 pb-5">
 				<div class=" col-12 col-lg-5">
 					<p class="text display-4">Sobre mim.</p>
@@ -117,11 +131,11 @@
 		</div>
 	</section>
 
-	<section id='habilidades' class="pt-5 pb-5">
-		<div class="container pt-5 pb-5">
+	<section id='habilidades' class="pt-5 pb-5 d-flex bg-dark">
+		<div class="container pt-5 pb-5 d-flex align-items-center justify-content-center">
 			<div class="row gap-3 d-flex justify-content-center">
 
-				<div class= "col-12">
+				<div class="col-12">
 					<p class="text text-center display-4">Habilidades</p>
 				</div>
 
@@ -147,6 +161,27 @@
 
 				<div class="btn btn-outline-light pt-5 pb-5 col-5 col-lg-3 border">
 					<i class="display-1 fa-brands fa-font-awesome"></i>
+				</div>
+
+				<div class="col-12 d-flex justify-content-center row mt-4 gap-2">
+                     
+					<div class="col-5 col-md-4 col-lg-3 col-xl-2"><img class="col-12" height="60px"
+							src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white">
+					</div>
+
+					<div class="col-5 col-md-4 col-lg-3 col-xl-2"><img class="col-12"  height="60px"
+							src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white">
+					</div>
+
+					<div class="col-5 col-md-4 col-lg-3 col-xl-2">
+						<img class="col-12"  height="60px"
+							src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
+					</div>
+
+					<div class="col-5 col-md-4 col-lg-3 col-xl-2">
+						<img class="col-12"  height="60px"
+							src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+					</div>
 				</div>
 
 			</div>
