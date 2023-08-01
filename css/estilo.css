@@ -1,0 +1,431 @@
+/*____INICIO_Gerais____*/
+
+body {
+	background:linear-gradient(to right top, 
+	black 40%, #eceb8a);
+	overflow-x: none;
+	background-attachment: fixed;
+	padding: 0 !important;
+	margin: 0 !important;
+   font-family: monospace!important;
+}
+
+.borda {
+  border: 2px solid red!important;
+}
+
+.btn {
+   cursor: default!important;
+} 
+
+ul, li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+section {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.row {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+/*____FIM_Gerais____*/
+
+
+
+/*____INICIO_Classes____*/
+
+/*____INICIO_FIRST_PAGE____*/
+
+#inicio, #sobre{
+   height: 100vh;
+}
+
+.nav-item a{
+	color: white;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+
+.active {
+  color: #eceb8a!important;
+  border-bottom: 2px solid #eceb8a!important;
+}
+
+.nav-item a:hover {
+	color: #F3F280;
+}
+
+.navbar {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.img {
+	margin: 0 auto !important;
+	display: flex;
+	width: 300px;
+	padding: 0;
+	animation: movimento 3s infinite normal;
+}
+
+/*____INICIO_CONFIG_ESCRITA_NOME____*/
+
+.linha {
+ 	 animation: linha 1s steps(40) infinite normal , 
+ 	 typing 4s steps(40) 1s  normal both;
+ }
+
+ .linha2 {
+ 	 animation: linha 1s steps(40) infinite normal , 
+ 	 typing2 4s steps(40) 1s normal both;	
+ }
+
+ .nome {
+	color: white;
+    font-size: 6vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.descricao {
+	color: white;
+    font-size: 4vw;
+    display: flex;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*____FIM_CONFIG_ESCRITA_NOME____*/ 
+
+/*____FIM_FIRST_PAGE____*/
+
+
+/*____INICIO_SOBRE____*/
+
+.text {
+	color: white;
+}
+
+.subtext {
+    color: white;
+    font-weight: 100;
+}
+
+.icons_sobre {
+	color: white;
+	font-size: 11vw;
+}
+
+.rotation1 {
+	animation: rotation1Variation 4s infinite normal;
+}
+
+.rotation2 {
+	animation: rotation2Variation 4s infinite normal;
+}
+
+.rotation3 {
+	animation: rotation3Variation 4s infinite normal;
+}
+
+
+/*____FIM_SOBRE____*/
+
+
+/*____INICIO_HABILIDADES____*/
+
+.icons {
+     text-align: center !important;
+}
+
+.icons:hover {
+	filter: blur(5px);
+}
+
+
+.align {
+  padding: 80px 0 20px 0 !important;
+}
+
+.iconH {
+   height: 50px;
+}
+
+/*____FIM_HABILIDADES____*/
+
+
+
+/*____INICIO_PROJETOS____*/
+
+.imgProjeto {
+  position: relative;
+}
+
+.box-img {
+  overflow: hidden;
+  display: flex;
+}
+
+.box-img:hover a{
+  filter: invert(1);
+}
+
+.subtext2 {
+	font-size: 3.5vw;
+	padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+/*____FIM_PROJETOS____*/
+
+/*____FIM_Classes____*/ 
+
+
+
+ /*____INICIO_ID____*/
+
+
+ /*____FIM_ID____*/
+
+
+
+/*____INICIO_Keyframes____*/
+
+@keyframes rotation1Variation {
+   0%   {}
+   50%  {transform: translateX(200%);
+    text-shadow: 0px 0px 20px #F3F280;}
+   100% {}
+}
+
+@keyframes rotation2Variation {
+   0%   {}
+   50%  {
+    text-shadow: 0px 0px 20px #F3F280;}
+   100% {}
+}
+
+@keyframes rotation3Variation {
+   0%   {}
+   50%  {transform: translateX(-200%);
+     text-shadow: 0px 0px 40px #F3F280;}
+   100% {}
+}
+
+@keyframes rotation1 {
+   0%   {}
+   50%  {transform: translateY(100%) translateX(300%);
+    text-shadow: 0px 0px 20px #F3F280;}
+   100% {}
+}
+
+@keyframes rotation2 {
+   0%   {}
+   50%  {transform: translateY(-100%);
+    text-shadow: 0px 0px 20px #F3F280;}
+   100% {}
+}
+
+@keyframes rotation3 {
+   0%   {}
+   50%  {transform: translateY(100%) translateX(-300%);
+     text-shadow: 0px 0px 40px #F3F280;}
+   100% {}
+}
+
+@keyframes movimento {
+  0%   {filter: blur(2px);}
+  50%  {transform: translateY(10%); filter: blur(0px);}
+  100% {filter: blur(2px);}
+}
+    
+@keyframes linha {
+   from{
+     border-right: none;
+   }
+   to {
+     border-right:2px solid rgba(255,255,255, 0.7) ; 
+   } 
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 10em;
+	}
+   }
+
+@keyframes typing2 {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 14em;
+	}
+   }  
+ 
+/*____FIM_Keyframes____*/
+
+/*____INICIO_Scroll_Animation____*/
+ 
+ [data-anime] {
+    opacity: 0;
+    transition: .8s;
+ }
+
+ [data-anime = "left"] {
+    transform: translate3d(-250px, 0px, 0px);
+ }
+
+ [data-anime = "opacity"] {
+    transform: translate3d(0px, 0px, 0px);
+ }
+
+ [data-anime = 'container'] {
+    transform: translate3d(-200px, 0px, 0px);
+ }
+
+ [data-anime = 'typing'] {
+    transform: translate3d(-600px, 0px, 0px);
+ }
+     
+ .animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+ }
+
+
+/*____fim_Scroll_Animation____*/
+
+/*____INICIO_MediaQueries____*/  
+@media (min-width: 320px) {
+    .icons_sobre {
+        font-size: 8vw;
+        margin-top: 20px;
+    }
+
+   .align {
+    padding: 60px 0 20px 0;
+}
+} 
+
+@media (min-height:700px) {
+      .icons_sobre {
+        font-size: 7vw;
+    }
+}
+
+@media (min-width: 576px) {
+
+  @keyframes typing2 {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 13em;
+	}
+   }
+
+   div.scrollmenu a {
+        color: white;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding: 10px 10px;
+   }
+
+   .iconH {
+      height: 55px;
+   }
+
+ }
+
+@media (min-width: 768px) {
+  
+  .nome {
+  	font-size: 4vw;
+  }
+  
+   .descricao {
+     font-size: 3vw;
+  }
+
+  .subtext2{
+  	font-size:2.3vw;
+  }
+
+  .rotation1 {
+	animation: rotation1 4s infinite normal;
+}
+
+.rotation2 {
+	animation: rotation2 4s infinite normal;
+}
+
+.rotation3 {
+	animation: rotation3 4s infinite normal;
+}
+
+ }
+
+
+ @media (min-height:800px) {
+
+    .icons_sobre {
+      font-size: 6vw;
+  }
+
+  #habilidades {
+   height: 100vh;
+  }
+}  
+
+@media (min-width: 992px) { 
+
+
+.iconH {
+      height: 60px;
+}
+
+.img {
+	width: 500px;
+}
+
+    .subtext2{
+  	font-size:1.8vw;
+  }
+
+ }
+
+@media (min-width: 1200px) { 
+
+.teste {
+		margin-top: -100px;
+
+}
+    .nome {
+  	font-size: 3.5vw;
+  }
+
+  .descricao {
+     font-size: 2vw;
+  }
+
+ }
+
+ /*____FIM_MediaQueries____*/
