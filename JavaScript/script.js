@@ -1,15 +1,3 @@
-const scrollLight = `
-.scroll::-webkit-scrollbar {
-  width: 4px;
-  background:white;
-}
-
-.scroll::-webkit-scrollbar-thumb {
-  background-color: #eceb8a;
-  border-radius: 4px;
-}
-`
-
 const scrollDark = `
 .scroll::-webkit-scrollbar {
   width: 4px;
@@ -43,11 +31,11 @@ function modificarScrollbar(estilo) {
 
 document.addEventListener("DOMContentLoaded", function () {
   const url = window.location.hash
-
+   console.log(url)
   const id = url.substring(1)
-  if (id == "inicio") {
-    modificarScrollbar(scrollLight)
-  } else if (id == "habilidades") {
+   
+
+  if (id == "habilidades") {
     modificarScrollbar(scrollDark)
   } else {
     modificarScrollbar(scrollBlack)
@@ -87,9 +75,8 @@ $(document).ready(function () {
   function updateURLWithSectionId(sectionId) {
     var currentURL = window.location.href
     var newURL = currentURL.split('#')[0] + '#' + sectionId
-    if (sectionId == "inicio") {
-      modificarScrollbar(scrollLight)
-    } else if (sectionId == "habilidades") {
+
+    if (sectionId == "habilidades") {
       modificarScrollbar(scrollDark)
     } else {
       modificarScrollbar(scrollBlack)

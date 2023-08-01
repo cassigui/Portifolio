@@ -28,14 +28,14 @@
 
 	<style id="scrollbar-style">
 		.scroll::-webkit-scrollbar {
-			width: 12px;
-			border: 1px solid rgb(200, 200, 200);
+			width: 4px;
+			background: black;
+			transition: background-color 2s ease;
 		}
 
 		.scroll::-webkit-scrollbar-thumb {
-			background-color: gold;
-			border-radius: 6px;
-			/* Adicionando a transição suave para a cor de fundo */
+			background-color: white;
+			border-radius: 4px;
 			transition: background-color 2s ease;
 		}
 	</style>
@@ -102,7 +102,7 @@
 			<div class="row pt-5 pb-5">
 				<div class=" col-12 col-lg-5">
 					<p class="text display-4">Sobre mim.</p>
-					<p class="subtext mt-2"><b>
+					<p class="subtext mt-2 fs-5"><b>
 							Meu nome é Cassiano Guilherme, desde pequeno fui cativado pela tecnologia e atualmente me
 							esforço constantemente para a entrada no mercado de trabalho na área de programação
 							front-end.
@@ -164,24 +164,26 @@
 				</div>
 
 				<div class="col-12 d-flex justify-content-center row mt-4 gap-2">
-                     
-					<div class="col-5 col-md-4 col-lg-3 col-xl-2"><img class="col-12" height="60px"
-							src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white">
-					</div>
 
-					<div class="col-5 col-md-4 col-lg-3 col-xl-2"><img class="col-12"  height="60px"
+
+					<div class="col-5 col-md-4 col-lg-3 col-xl-2"><img class="col-12 iconH"
 							src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white">
 					</div>
 
-					<div class="col-5 col-md-4 col-lg-3 col-xl-2">
-						<img class="col-12"  height="60px"
-							src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
+					<div class="col-5 col-md-4 col-lg-3 col-xl-2"><img class="col-12 iconH"
+							src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white">
 					</div>
 
 					<div class="col-5 col-md-4 col-lg-3 col-xl-2">
-						<img class="col-12"  height="60px"
+						<img class="col-12 iconH"
 							src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
 					</div>
+
+					<div class="col-5 col-md-4 col-lg-3 col-xl-2">
+						<img class="col-12 iconH"
+							src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
+					</div>
+
 				</div>
 
 			</div>
@@ -197,10 +199,9 @@
 
 			<div class="mt-5">
 				<p class="text text-center display-4">Projetos</p>
-				<p class="subtext2">(Apenas protótipos não ativos.)</p>
 			</div>
 
-			<div class="row d-flex align-items-center align-content-center gap-3 justify-content-center">
+			<div class="row d-flex align-items-center align-content-center gap-3 justify-content-center mt-5">
 
 				<div class="box-img col-5 col-xl-3 border pt-5 pb-5 btn btn-outline-light">
 					<a><img src="imagens/finans.png" class="imgProjeto col-12"></a>
@@ -221,11 +222,11 @@
 				</div>
 
 				<div class="box-img col-5 col-xl-3 border pt-5 pb-5 btn btn-outline-light">
-					<a href=""><img src="imagens/em_breve.png" class="imgProjeto col-12"></a>
+					<a href="https://vamilly.com/"><img src="imagens/vamilly.png" class="imgProjeto col-12"></a>
 				</div>
 
 				<div class="box-img col-5 col-xl-3 border pt-5 pb-5 btn btn-outline-light">
-					<a href=""><img src="imagens/em_breve.png" class="imgProjeto col-12"></a>
+					<a><img src="imagens/em_breve.png" class="imgProjeto col-12"></a>
 				</div>
 
 			</div>

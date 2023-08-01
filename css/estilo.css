@@ -42,7 +42,7 @@ section {
 
 /*____INICIO_FIRST_PAGE____*/
 
-#inicio, #sobre, #habilidades{
+#inicio, #sobre{
    height: 100vh;
 }
 
@@ -155,6 +155,10 @@ section {
 
 .align {
   padding: 80px 0 20px 0 !important;
+}
+
+.iconH {
+   height: 50px;
 }
 
 /*____FIM_HABILIDADES____*/
@@ -345,6 +349,10 @@ section {
     padding: 10px 10px;
    }
 
+   .iconH {
+      height: 55px;
+   }
+
  }
 
 @media (min-width: 768px) {
@@ -381,9 +389,18 @@ section {
     .icons_sobre {
       font-size: 6vw;
   }
+
+  #habilidades {
+   height: 100vh;
+  }
 }  
 
 @media (min-width: 992px) { 
+
+
+.iconH {
+      height: 60px;
+}
 
 .img {
 	width: 500px;
