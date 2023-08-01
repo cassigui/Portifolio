@@ -136,13 +136,11 @@ section {
 /*____INICIO_SOBRE____*/
 
 .text {
-	font-size: 12vw;
 	color: white;
     font-family: 'tech';
 }
 
 .subtext {
-	padding: 30px;
     color: white;
     font-family: 'subtext';
 }
@@ -338,19 +336,9 @@ section {
 
 /*____INICIO_MediaQueries____*/  
 @media (min-width: 320px) {
-    .subtext {
-        font-size: 3.5vw;
-        margin-bottom: 0 !important;
-        padding: 20px !important;
-    }
-
     .icons_sobre {
         font-size: 8vw;
         margin-top: 20px;
-    }
-
-    .text {
-        font-size: 8vw;
     }
 
    .align {
@@ -359,28 +347,12 @@ section {
 } 
 
 @media (min-height:700px) {
-    .subtext {
-        font-size: 4.1vw;
-    }
-
-    .text {
-        font-size: 9vw;
-    }
-
       .icons_sobre {
         font-size: 9vw;
     }
 }
 
 @media (min-width: 576px) {
-
- .text {
- 	font-size: 8vw;
- }
-
- .subtext {
-     font-size: 3vw;
-  }
 
   @keyframes typing2 {
 	from {
@@ -402,7 +374,8 @@ section {
  }
 
 @media (min-width: 768px) {
-      .nome {
+  
+  .nome {
   	font-size: 4vw;
   }
   
@@ -410,15 +383,8 @@ section {
      font-size: 3vw;
   }
 
-  .text {
-  	font-size: 6vw;
-  }
-
   .subtext2{
   	font-size:2.3vw;
-  }
-  .subtext {
-  	font-size: 2.2vw;
   }
 
   .rotation1 {
@@ -437,13 +403,6 @@ section {
 
 
  @media (min-height:800px) {
-  .subtext {
-      font-size: 4.2vw;
-  }
-
-  .text {
-      font-size: 10vw;
-  }
 
     .icons_sobre {
       font-size: 10vw;
@@ -455,10 +414,6 @@ section {
 .img {
 	width: 500px;
 }
-
-.subtext {
-     font-size: 1.8vw;
-  }
 
     .subtext2{
   	font-size:1.8vw;
@@ -480,13 +435,6 @@ section {
      font-size: 2vw;
   }
 
-  .subtext {
-     font-size: 1.6vw;
-  }
-
-   .margin {
- 	margin-top: -60px !important;
- }
  }
 
  /*____FIM_MediaQueries____*/
