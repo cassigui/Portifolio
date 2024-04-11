@@ -44,16 +44,6 @@ section {
       0 0 100px rgba(236, 235, 138, 0.8);
 }
 
-@keyframes animateBubble {
-   0% {
-      transform: translateY(100vh) scale(0);
-   }
-
-   100% {
-      transform: translateY(-30vh) scale(0.5);
-   }
-}
-
 /*Fim do fundo animado*/
 
 /*____INICIO_Gerais____*/
@@ -96,6 +86,31 @@ header.scrolling {
    width: 80%;
    align-items: center;
    justify-content: space-between;
+}
+
+.contato a {
+   background-color: rgb(33, 119, 141);
+   border: 2px solid white;
+   border-radius: 10px;
+   padding: 3px 10px;
+   color: white;
+   font-weight: lighter;
+   text-decoration: none;
+}
+
+.contato a:hover {
+   background: linear-gradient(to right bottom,
+         rgb(33, 119, 141) 20%, #8432b3);
+}
+
+.contato {
+   margin-left: auto;
+   display: flex;
+   align-items: center;
+}
+
+.navbar-nav {
+   width: 100%;
 }
 
 body {
@@ -274,120 +289,6 @@ li {
 
 /*____FIM_PROJETOS____*/
 
-/*____INICIO_Keyframes____*/
-
-@keyframes rotation1Variation {
-   0% {}
-
-   50% {
-      transform: translateX(200%);
-      text-shadow: 0px 0px 20px #F3F280;
-   }
-
-   100% {}
-}
-
-@keyframes rotation2Variation {
-   0% {}
-
-   50% {
-      text-shadow: 0px 0px 20px #F3F280;
-   }
-
-   100% {}
-}
-
-@keyframes rotation3Variation {
-   0% {}
-
-   50% {
-      transform: translateX(-200%);
-      text-shadow: 0px 0px 40px #F3F280;
-   }
-
-   100% {}
-}
-
-@keyframes rotation1 {
-   0% {}
-
-   50% {
-      transform: translateY(100%) translateX(300%);
-      text-shadow: 0px 0px 20px #F3F280;
-   }
-
-   100% {}
-}
-
-@keyframes rotation2 {
-   0% {}
-
-   50% {
-      transform: translateY(-100%);
-      text-shadow: 0px 0px 20px #F3F280;
-   }
-
-   100% {}
-}
-
-@keyframes rotation3 {
-   0% {}
-
-   50% {
-      transform: translateY(100%) translateX(-300%);
-      text-shadow: 0px 0px 40px #F3F280;
-   }
-
-   100% {}
-}
-
-@keyframes movimento {
-   0% {
-      filter: blur(2px);
-   }
-
-   50% {
-      transform: translateY(10%);
-      filter: blur(0px);
-   }
-
-   100% {
-      filter: blur(2px);
-   }
-}
-
-@keyframes linha {
-   from {
-      border-right: none;
-   }
-
-   to {
-      border-right: 2px solid rgba(255, 255, 255, 0.7);
-   }
-}
-
-@keyframes typing {
-   from {
-      width: 0;
-   }
-
-   to {
-      width: 10em;
-   }
-}
-
-@keyframes typing2 {
-   from {
-      width: 0;
-   }
-
-   to {
-      width: 14em;
-   }
-}
-
-/*____FIM_Keyframes____*/
-
 /*____INICIO_Scroll_Animation____*/
 
 [data-anime] {
@@ -417,144 +318,3 @@ li {
 }
 
 /*____Fim_Scroll_Animation____*/
-
-@media (min-width: 320px) {
-   .icons_sobre {
-      font-size: 8vw;
-      margin-top: 20px;
-   }
-
-   .align {
-      padding: 60px 0 20px 0;
-   }
-}
-
-@media (min-height:700px) {
-   .icons_sobre {
-      font-size: 7vw;
-   }
-}
-
-@media (min-width: 576px) {
-
-   @keyframes typing2 {
-      from {
-         width: 0;
-      }
-
-      to {
-         width: 13em;
-      }
-   }
-
-   div.scrollmenu a {
-      color: white;
-      font-weight: bold;
-      letter-spacing: 5px;
-      padding: 10px 10px;
-   }
-
-   .iconH {
-      height: 55px;
-   }
-}
-
-@media (min-width: 768px) {
-
-   .habilidade-box i {
-      font-size: 7rem;
-      padding: 5rem 0;
-   }
-
-   .nome {
-      font-size: 4vw;
-   }
-
-   .descricao {
-      font-size: 3vw;
-   }
-
-   .subtext2 {
-      font-size: 2.3vw;
-   }
-
-   .wrapper-projects {
-      grid-template-columns: 1fr 1fr 1fr;
-   }
-}
-
-@media (min-height:800px) {
-
-   .icons_sobre {
-      font-size: 6vw;
-   }
-
-   #habilidades {
-      height: 100vh;
-   }
-}
-
-@media(max-width: 992px) {
-
-   .wrapper {
-      grid-template-columns: 1fr 1fr;
-   }
-
-   #habilidades {
-      height: 100%;
-   }
-}
-
-@media (min-width: 992px) {
-
-   .rotation1 {
-      animation: rotation1 4s infinite normal;
-   }
-
-   .rotation2 {
-      animation: rotation2 4s infinite normal;
-   }
-
-   .rotation3 {
-      animation: rotation3 4s infinite normal;
-   }
-
-
-   .wrapper {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-   }
-
-   #habilidades {
-      height: 100%;
-   }
-
-   .iconH {
-      height: 60px;
-   }
-
-   .img {
-      width: 500px;
-   }
-
-   .subtext2 {
-      font-size: 1.8vw;
-   }
-
-}
-
-@media (min-width: 1200px) {
-
-   .teste {
-      margin-top: -100px;
-
-   }
-
-   .nome {
-      font-size: 3.5vw;
-   }
-
-   .descricao {
-      font-size: 2vw;
-   }
-
-}

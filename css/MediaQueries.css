@@ -1,0 +1,140 @@
+@media (min-width: 320px) {
+  .icons_sobre {
+    font-size: 8vw;
+    margin-top: 20px;
+  }
+
+  .align {
+    padding: 60px 0 20px 0;
+  }
+}
+
+@media (min-height:700px) {
+  .icons_sobre {
+    font-size: 7vw;
+  }
+}
+
+@media (min-width: 576px) {
+
+  @keyframes typing2 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 13em;
+    }
+  }
+
+  div.scrollmenu a {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding: 10px 10px;
+  }
+
+  .iconH {
+    height: 55px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .habilidade-box i {
+    font-size: 7rem;
+    padding: 5rem 0;
+  }
+
+  .nome {
+    font-size: 4vw;
+  }
+
+  .descricao {
+    font-size: 3vw;
+  }
+
+  .subtext2 {
+    font-size: 2.3vw;
+  }
+
+  .wrapper-projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-height:800px) {
+
+  .icons_sobre {
+    font-size: 6vw;
+  }
+
+  #habilidades {
+    height: 100vh;
+  }
+}
+
+@media(max-width: 992px) {
+
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #habilidades {
+    height: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .rotation1 {
+    animation: rotation1 4s infinite normal;
+  }
+
+  .rotation2 {
+    animation: rotation2 4s infinite normal;
+  }
+
+  .rotation3 {
+    animation: rotation3 4s infinite normal;
+  }
+
+
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #habilidades {
+    height: 100%;
+  }
+
+  .iconH {
+    height: 60px;
+  }
+
+  .img {
+    width: 500px;
+  }
+
+  .subtext2 {
+    font-size: 1.8vw;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .teste {
+    margin-top: -100px;
+
+  }
+
+  .nome {
+    font-size: 3.5vw;
+  }
+
+  .descricao {
+    font-size: 2vw;
+  }
+
+}
