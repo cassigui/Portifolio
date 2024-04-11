@@ -1,5 +1,10 @@
-.container {
-   border: 2px solid red;
+.title {
+   padding-bottom: 20px;
+   text-align: center;
+}
+
+section {
+   padding: 80px 0;
 }
 
 /*Fundo animado*/
@@ -99,6 +104,7 @@ body {
    overflow-x: none;
    background-attachment: fixed;
    padding: 0;
+   color: white !important;
    margin: 0;
    font-family: monospace;
 }
@@ -114,11 +120,6 @@ li {
    margin: 0;
 }
 
-section {
-   padding: 0;
-   margin: 0;
-}
-
 .row {
    padding: 0 !important;
    margin: 0 !important;
@@ -128,8 +129,7 @@ section {
 
 /*____INICIO_FIRST_PAGE____*/
 
-#inicio,
-#sobre {
+#inicio {
    display: flex;
    align-items: center;
    height: 100vh;
@@ -201,11 +201,6 @@ section {
 /*____FIM_CONFIG_ESCRITA_NOME____*/
 
 /*____INICIO_SOBRE____*/
-
-.text {
-   color: white;
-}
-
 .subtext {
    color: white;
    font-weight: 100;
@@ -231,7 +226,6 @@ section {
 /*____FIM_SOBRE____*/
 
 /*____INICIO_HABILIDADES____*/
-
 .wrapper {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -240,21 +234,8 @@ section {
 }
 
 .habilidade-box i {
-   font-size: 7rem;
-   padding: 5rem 0;
-}
-
-.icons:hover {
-   filter: blur(5px);
-}
-
-
-.align {
-   padding: 80px 0 20px 0 !important;
-}
-
-.iconH {
-   height: 50px;
+   font-size: 4rem;
+   padding: 1.5rem 0;
 }
 
 /*____FIM_HABILIDADES____*/
@@ -281,7 +262,7 @@ section {
 .wrapper-projects {
    display: grid;
    gap: 20px;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
 }
 
 .subtext2 {
@@ -476,10 +457,14 @@ section {
    .iconH {
       height: 55px;
    }
-
 }
 
 @media (min-width: 768px) {
+
+   .habilidade-box i {
+      font-size: 7rem;
+      padding: 5rem 0;
+   }
 
    .nome {
       font-size: 4vw;
@@ -493,20 +478,10 @@ section {
       font-size: 2.3vw;
    }
 
-   .rotation1 {
-      animation: rotation1 4s infinite normal;
+   .wrapper-projects {
+      grid-template-columns: 1fr 1fr 1fr;
    }
-
-   .rotation2 {
-      animation: rotation2 4s infinite normal;
-   }
-
-   .rotation3 {
-      animation: rotation3 4s infinite normal;
-   }
-
 }
-
 
 @media (min-height:800px) {
 
@@ -532,9 +507,21 @@ section {
 
 @media (min-width: 992px) {
 
+   .rotation1 {
+      animation: rotation1 4s infinite normal;
+   }
+
+   .rotation2 {
+      animation: rotation2 4s infinite normal;
+   }
+
+   .rotation3 {
+      animation: rotation3 4s infinite normal;
+   }
+
 
    .wrapper {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
    }
 
    #habilidades {
