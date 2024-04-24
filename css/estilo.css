@@ -65,10 +65,9 @@ section {
 }
 
 header {
-   transition: all 0.4s;
    margin: 0;
+   background: rgb(0, 0, 0, 0.7);
    position: fixed;
-   padding: 20px 0;
    width: 100%;
    top: 0;
    z-index: 1;
@@ -162,6 +161,7 @@ li {
    color: white;
    text-transform: uppercase;
    font-weight: bold;
+   display: inline;
 }
 
 .active {

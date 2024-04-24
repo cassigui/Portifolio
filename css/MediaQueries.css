@@ -83,9 +83,24 @@
   #habilidades {
     height: 100%;
   }
+
+  .nav-item {
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: 992px) {
+
+  header {
+    transition: all 0.4s;
+    background: none;
+    margin: 0;
+    position: fixed;
+    padding: 20px 0;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
 
   .rotation1 {
     animation: rotation1 4s infinite normal;
