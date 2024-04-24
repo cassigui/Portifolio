@@ -137,4 +137,11 @@
     font-size: 2vw;
   }
 
+  #sobre,
+  #habilidades {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
 }
